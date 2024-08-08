@@ -621,3 +621,59 @@ server {
 }
 
 ```
+
+## outras ponderações
+
+O conceito de orquestração de containers, que foi apresentado brevemente em uma aula anterior. Aqui, você vai aprender
+sobre duas ferramentas importantes: Docker Swarm e Kubernetes.
+O Docker Swarm é uma ferramenta nativa do Docker que facilita o gerenciamento de aplicações distribuídas em um cluster
+de hosts Docker. Ele é uma boa opção para quem está começando com orquestração de containers.Já o Kubernetes é uma
+plataforma de código aberto mais robusta, com recursos avançados para ambientes de produção complexos. Ele é amplamente
+utilizado por empresas de todos os tamanhos.Se você quiser se aprofundar no Kubernetes, a Alura oferece uma formação
+completa sobre o tema! Lembre-se: a prática é fundamental para o aprendizado! Qualquer dúvida, pode me perguntar!
+
+# Metodologia Twelve-Factor App
+
+A metodologia Twelve-Factor App fornece diretrizes para criar aplicações modernas e escaláveis, particularmente em
+ambientes de computação em nuvem. Seguir esses princípios ajuda a garantir que sua aplicação seja modular, flexível e
+fácil de manter e escalar.
+
+## Princípios
+
+1. **Codebase (Código-fonte único)**
+
+- Armazene sua aplicação em um único repositório de código.
+- Múltiplas implantações devem derivar do mesmo código-base.
+
+2. **Dependencies (Dependências explícitas)**
+
+- Declare e gerencie todas as dependências da aplicação explicitamente.
+- Mantenha as dependências isoladas para evitar conflitos.
+
+3. **Config (Configurações)**
+
+- Armazene configurações em variáveis de ambiente, não no código-fonte.
+- Permite configuração flexível para diferentes ambientes.
+
+4. **Backing Services (Serviços de Back-end)**
+
+- Trate serviços de back-end, como bancos de dados e filas, como recursos externos.
+- Acesse esses serviços por meio de interfaces padrão.
+
+5. **Build, Release, Run (Construir, entregar, executar)**
+
+- Separe o processo em três etapas distintas: build, entrega e execução.
+- Cada etapa deve ter suas próprias responsabilidades para garantir consistência.
+
+6. **Processes (Processos)**
+
+- Execute a aplicação como processos independentes, leves e sem estado.
+- Facilita escalabilidade e resiliência.
+
+7. **Port Binding (Ligação de porta)**
+
+- A aplicação deve expor serviços por meio de portas.
+- Facilita a conexão com outros serviços e aplicações.
+
+8. **Concurrency (Concorrênc
+
