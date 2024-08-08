@@ -3,8 +3,10 @@ package br.com.alura.codechella.domain.evento.vo;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.NotBlank;
 
+import java.io.Serializable;
+
 @Embeddable
-public record Endereco(
+public record Endereco (
         @NotBlank(message = "Cidade é obrigatória!")
         String cidade,
         @NotBlank(message = "UF é obrigatória!")
@@ -17,4 +19,4 @@ public record Endereco(
         String cep,
         String numero,
         String complemento
-) {}
+) implements Serializable {}
